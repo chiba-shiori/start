@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
+    <title>company</title>
+    <link rel="stylesheet" href="reset.css"> <!-- resetの読み込み -->
+    <link rel="stylesheet" href="style.css"> <!-- CSSの読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="site-header">
+    <h1 class="site-header__logo">
+      <a href="#" class="site-header__logo-link">
+        <img src="./images/logo (1).png" alt="site-header__logo-image" class="site-header__logo-image">
+      </a>
+    </h1>
+
+    <nav class="site-header__nav">
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a href="./index.html" class="site-header__nav-link">ホーム</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a href="./message.html" class="site-header__nav-link">メッセージ</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a href="./company.html" class="site-header__nav-link">会社概要</a>
+      </li>
+    </ul>
+    </nav>
+  </header>
+
+  <div class="message-header">
+  <img src="./images/pc_header.png" class="message-header__image">
+  <h1 class="message-header__title">会社概要</h1>
+  </div>
+
+  <div class="company-info">
+  <table class="company-info__table">
+    <tr class="company-info__row">
+      <td class="company-info__title">社名</td>
+      <td class="company-info__text">株式会社START</td>
+    </tr>
+    <tr class="company-info__row">
+      <td class="company-info__title">設立</td>
+      <td class="company-info__text">2025.02.10</td>
+    </tr>
+    <tr class="company-info__row">
+      <td class="company-info__title">代表取締役</td>
+      <td class="company-info__text">ショーン・デイビット・ジュニア</td>
+    </tr>
+    <tr class="company-info__row">
+      <td class="company-info__title">資本金</td>
+      <td class="company-info__text">10,000,000円</td>
+    </tr>
+    <tr class="company-info__row">
+      <td class="company-info__title">所在地</td>
+      <td class="company-info__text">〒555-5555 東京都千代田区 スタートビルディング 606</td>
+    </tr>
+  </table>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8317691474326!2d139.76448647623135!3d35.68114412997809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1747466513134!5m2!1sja!2sjp" width="1110" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="company-info__map"></iframe>
+    <a href="https://maps.app.goo.gl/rYV4Fyqr9R4amzsv7" class="company-info__map--link"><p class="company-info__map--text">Google mapで見る</p></a>
+
+  </div>
+
+    <section class="news">
+    <ul class="news__nav-list">
+      <li class="news__nav-item">
+        <a href="#" class="news__nav-link">
+          <time class="news__nav-date" datetime="2023-02-10">2023.02.10</time>
+          <p class="news__nav-excerpt">コーポレートサイトをリニューアルしました。</p>
+        </a>
+      </li>
+      <li class="news__nav-item">
+        <a href="#" class="news__nav-link">
+          <time class="news__nav-date" datetime="2023-02-08">2023.02.08</time>
+          <p class="news__nav-excerpt">採用を強化中です！一緒に働きませんか？</p>
+        </a>
+      </li>
+      <li class="news__nav-item">
+        <a href="#" class="news__nav-link">
+          <time class="news__nav-date" datetime="2023-02-02">2023.02.02</time>
+          <p class="news__nav-excerpt">人材紹介SNS『スタート』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="site-footer">
+    <nav class="site-footer__nav">
+      <ul class="site-footer__nav-list">
+        <li class="site-footer__nav-item">
+          <a href="./index.html" class="site-footer__nav-link">ホーム</a>
+        </li>
+        <li class="site-footer__nav-item">
+          <a href="./message.html" class="site-footer__nav-link">メッセージ</a>
+        </li>
+        <li class="site-footer__nav-item">
+          <a href="./company.html" class="site-footer__nav-link">会社概要</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="site-footer__copyright">
+      &copy;START
+    </p>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>

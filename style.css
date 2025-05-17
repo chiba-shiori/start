@@ -259,7 +259,7 @@ footer
 
 /* message page */
 /*
-message header
+message/company header
 ----------------------------------------------------- */
 .message-header {
   display: grid;
@@ -333,4 +333,67 @@ main content
 .message-main__image--office {
   width: 100%;
   padding-top:80px;
+}
+
+/* ============================================================================= */
+
+/* company page */
+/*
+会社概要
+----------------------------------------------------- */
+.company-info {
+  max-width: 1170px;
+  margin:60px auto 0;
+}
+
+.company-info__table {
+  width: 100%;
+}
+
+.company-info__row {
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.company-info__title {
+  padding:30px;
+  font-family: var(--Noto-font);
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 17.3px;
+  font-weight: bold;
+  color:#333333;
+}
+
+.company-info__text {
+  padding:30px;
+  font-family: var(--Noto-font);
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 17.3px;
+  color: #333333;
+}
+
+/*
+MAP
+----------------------------------------------------- */
+.company-info__map {
+  padding-top:50px;
+  width: 100%;
+}
+
+.company-info__map--text {
+  text-align: right;
+  padding: 20px 8px 0 0;
+  font-family: var(--Noto-font);
+  font-size: 14px;
+  line-height: 16.1px;
+  color: #349BF4;
+  text-decoration: underline;
+}
+
+/*
+ニュース
+----------------------------------------------------- */
+.news {
+  padding-top: 80px;
 }
