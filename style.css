@@ -17,9 +17,7 @@ padding:0 165px;
 }
 
 /* マウスホバー */
-/*.site-header__nav-item:not(:nth-child(1)):hover,
-*/
-.news__nav-link:hover{
+.site-header__nav-item:hover,.news__nav-link:hover{
   color: var(--main-color);
 }
 
@@ -53,6 +51,10 @@ header
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.8px;
+}
+
+.site-header__nav-link--home {
+  color: var(--main-color);
 }
 
 .current {
