@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /*
-*
 ----------------------------------------------------- */
 :root {
   --Noto-font: 'Noto Sans JP', sans-serif;
@@ -10,17 +9,22 @@
 }
 
 /* 左右の余白 */
-.news, .service, .site-footer__nav-list, .site-footer__copyright {
+.news, .service,
+.site-footer__nav-list,
+.site-footer__copyright,
+.message-main__image--office {
 padding:0 165px;
 }
 
 /* マウスホバー */
-.site-header__nav-item:not(:nth-child(1)):hover,
+/*.site-header__nav-item:not(:nth-child(1)):hover,
+*/
 .news__nav-link:hover{
   color: var(--main-color);
 }
 
 
+/* top page */
 /*
 header
 ----------------------------------------------------- */
@@ -44,15 +48,15 @@ header
   gap:30px;
 }
 
-.site-header__nav-item:nth-child(1) {
-  color:var(--main-color);
-}
-
 .site-header__nav-link {
   font-family: var(--Noto-font);
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.8px;
+}
+
+.current {
+  color:var(--main-color);
 }
 
 /*
@@ -135,8 +139,6 @@ news
 .news__nav-list, .news__nav-excerpt {
   flex:1;
 }
-
-
 
 /*
 service
@@ -247,8 +249,86 @@ footer
   font-size: 12px;
 }
 
-
-
 .site-footer__nav-list {
   display: flex;
+}
+
+/* ============================================================================= */
+
+/* message page */
+/*
+message header
+----------------------------------------------------- */
+.message-header {
+  display: grid;
+  place-items: center;
+}
+
+.message-header__image {
+  width: 100%;
+  height:auto;
+  grid-area: 1/1;
+}
+
+.message-header__title {
+  grid-area: 1/1;
+  font-family: var(--Noto-font);
+  color:#ffffff;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+}
+
+
+/*
+main content
+----------------------------------------------------- */
+.message-main__header {
+  margin: 60px 0 40px;
+  text-align: center;
+}
+
+.message-main__title {
+  font-family: var(--Noto-font);
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+  color:var(--main-color);
+}
+
+.message-main__subtitle {
+  padding-top:20px;
+  font-family: var(--Noto-font);
+  font-size: 18px;
+  line-height: 28.8px;
+  letter-spacing: 0.05em;
+  color:#333333;
+}
+
+.message-main__content {
+  width:790px;
+  margin:0 auto;
+}
+
+.message-main__image {
+  float:left;
+  border-radius: 50%;
+  margin:0 25px 25px 0; 
+}
+
+.message-main__text {
+  font-family: var(--Noto-font);
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0.05em;
+}
+
+.message-main__link {
+  color:#349BF4;
+}
+
+.message-main__image--office {
+  width: 100%;
+  padding-top:80px;
 }
