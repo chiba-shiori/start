@@ -12,8 +12,11 @@
 .news, .service,
 .site-footer__nav-list,
 .site-footer__copyright,
-.message-main__image--office {
-padding:0 165px;
+.message-main,
+.company-info {
+max-width: 1170px;
+padding:0 30px;
+margin:0 auto;
 }
 
 /* マウスホバー */
@@ -342,7 +345,6 @@ main content
 会社概要
 ----------------------------------------------------- */
 .company-info {
-  max-width: 1170px;
   margin:60px auto 0;
 }
 
