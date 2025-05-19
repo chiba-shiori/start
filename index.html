@@ -2,9 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <!--
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    -->
     <title>start</title>
     <link rel="stylesheet" href="reset.css"> <!-- resetの読み込み -->
     <link rel="stylesheet" href="style.css"> <!-- CSSの読み込み -->
@@ -22,8 +20,14 @@
       </a>
     </h1>
 
+    <button type="button" class="site-header__hamburger" id="site-header__hamburger--btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav class="site-header__nav">
-    <ul class="site-header__nav-list">
+    <ul class="site-header__nav-list" ID="site-header__nav-menu">
       <li class="site-header__nav-item">
         <a href="./index.html" class="site-header__nav-link site-header__nav-link--home">ホーム</a>
       </li>
@@ -35,10 +39,15 @@
       </li>
     </ul>
     </nav>
+
   </header>
 
   <section class="hero">
-    <img src="./images/pc_bg_mv.png" class="hero__image">
+    <picture class="hero__image">
+      <source media="(max-width: 767px)" srcset="./images/sp_mv.png">
+      <source media="(min-width: 768px)" srcset="./images/pc_bg_mv.png" class="hero__image">
+      <img src="./images/pc_bg_mv.png" alt="説明文" class="hero__image">
+    </picture>
     <div class="hero__message">
       <h1 class="hero__title">START</h1>
       <h2 class="hero__subtitle">仕事に最高のスタートを。</h2>
