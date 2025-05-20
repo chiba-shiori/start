@@ -2,9 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <!--
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    -->
     <title>message</title>
     <link rel="stylesheet" href="reset.css"> <!-- resetの読み込み -->
     <link rel="stylesheet" href="style.css"> <!-- CSSの読み込み -->
@@ -22,10 +20,16 @@
       </a>
     </h1>
 
+    <button type="button" class="site-header__hamburger" id="site-header__hamburger--btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav class="site-header__nav">
-    <ul class="site-header__nav-list">
+    <ul class="site-header__nav-list" ID="site-header__nav-menu">
       <li class="site-header__nav-item">
-        <a href="./index.html" class="site-header__nav-link">ホーム</a>
+        <a href="./index.html" class="site-header__nav-link site-header__nav-link--home">ホーム</a>
       </li>
       <li class="site-header__nav-item">
         <a href="./message.html" class="site-header__nav-link">メッセージ</a>
@@ -38,7 +42,11 @@
   </header>
 
   <div class="message-header">
-  <img src="./images/pc_header.png" class="message-header__image">
+    <picture class="message-header__image">
+      <source media="(max-width: 767px)" srcset="./images/pc_bg_mv.png">
+      <source media="(min-width: 768px)" srcset="./images/pc_header.png">
+      <img src="./images/pc_header.png" alt="説明文" class="message-header__image">
+    </picture>
   <h1 class="message-header__title">メッセージ</h1>
   </div>
 

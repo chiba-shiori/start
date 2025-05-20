@@ -358,7 +358,7 @@ main content
 
 .message-main__image--office {
   width: 100%;
-  padding-top:80px;
+  margin-top:80px;
 }
 
 /* ============================================================================= */
@@ -402,7 +402,7 @@ main content
 MAP
 ----------------------------------------------------- */
 .company-info__map {
-  padding-top:50px;
+  margin-top:50px;
   width: 100%;
 }
 
@@ -436,7 +436,8 @@ padding:0 20px;
 }
 
 /*
-header
+main
+__header
 ----------------------------------------------------- */
 .site-header {
   height:60px;
@@ -452,7 +453,8 @@ header
 }
 
 /*
-hero
+main
+__hero
 ----------------------------------------------------- */
 .hero {
   margin-bottom: 40px;
@@ -468,7 +470,8 @@ hero
 }
 
 /*
-news
+main/company
+__news
 ----------------------------------------------------- */
 .news {
   gap:20px;
@@ -490,7 +493,8 @@ news
 }
 
 /*
-service
+main
+__service
 ----------------------------------------------------- */
 .service__nav-list {
   flex-direction: column;
@@ -534,7 +538,8 @@ service
 }
 
 /*
-footer
+main
+__footer
 ----------------------------------------------------- */
 
 .site-footer {
@@ -552,6 +557,107 @@ footer
 .site-footer__copyright {
   font-size: 10px;
   padding-bottom:32px;
+}
+
+/*
+message/company
+__header
+----------------------------------------------------- */
+.message-header__image {
+  height: 160px;
+}
+
+.message-header__title {
+  font-size: 28px;
+}
+
+/*
+message
+_content
+----------------------------------------------------- */
+.message-main__header {
+  margin: 40px 0 30px;
+}
+
+.message-main__content {
+  width:335px;
+}
+
+.message-main__title {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.message-main__subtitle {
+  padding-top: 15px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.message-main__image {
+  margin: 0 15px 17px 0;
+}
+
+.message-main__text {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.message-main__image--office {
+  margin-top: 50px;
+  width: 335px;
+  height:260px;
+  object-fit:cover;
+  object-position: center;
+}
+
+/*
+company
+_info
+----------------------------------------------------- */
+.company-info {
+  margin: 40px auto 0;
+}
+
+.company-info__title,
+.company-info__text {
+  padding: 20px 20px 20px 0;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0;
+}
+
+.company-info__title {
+  white-space:nowrap;
+}
+
+.company-info__map {
+  height: 300px;
+}
+
+.company-info__map--text {
+  font-size: 12px;
+  line-height: 13.8px;
+  padding-top: 15px;
+}
+
+/*
+company
+_news
+----------------------------------------------------- */
+
+.news__nav-list {
+  margin-top:50px;
+}
+
+.news__nav-date-company {
+  font-family: var(--Roboto-font);
+  font-size: 15px;
+}
+
+.news__nav-excerpt-company {
+  font-family: var(--Roboto-font);
+  line-height: 24px;
 }
 
 
